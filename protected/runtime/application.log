@@ -1,0 +1,224 @@
+2013/05/08 12:41:49 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:42:21 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:42:22 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:42:24 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:44:23 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+2013/05/08 12:44:26 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+2013/05/08 12:44:27 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+2013/05/08 12:44:28 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/contact
+2013/05/08 12:44:29 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/page?view=about
+2013/05/08 12:44:29 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/index
+2013/05/08 12:44:30 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/page?view=about
+2013/05/08 12:44:31 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/contact
+2013/05/08 12:44:31 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+2013/05/08 12:46:55 [error] [php] Undefined index: PATH_INFO (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:47:08 [error] [php] Undefined index: PATH_INFO (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:53:06 [error] [php] Undefined index: PATH_INFO (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:54:05 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/
+2013/05/08 12:54:15 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:54:30 [error] [php] Use of undefined constant Ôindex - assumed 'Ôindex' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:54:41 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+2013/05/08 12:54:43 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+2013/05/08 12:54:44 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/contact
+2013/05/08 12:54:45 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/page?view=about
+2013/05/08 12:54:46 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/index
+2013/05/08 12:54:47 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/page?view=about
+2013/05/08 12:54:47 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/contact
+2013/05/08 12:54:48 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+2013/05/08 12:54:58 [error] [php] Use of undefined constant Ôsite - assumed 'Ôsite' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+2013/05/08 12:55:12 [error] [php] Use of undefined constant Ôsite - assumed 'Ôsite' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/site/login
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 12:56:12 [error] [php] Undefined index: PATH_INFO (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:03:11 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:03:30 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:03:43 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:03:45 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:10:03 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:10:36 [error] [php] Undefined index: r (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:11:01 [error] [php] Use of undefined constant Ôsite - assumed 'Ôsite' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php?r=site/login
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:11:13 [error] [php] Use of undefined constant Ôsite - assumed 'Ôsite' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php?r=site/login
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:11:36 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php?r=site/login
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 13:11:38 [error] [php] Use of undefined constant Ô - assumed 'Ô' (/Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php:12)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/base/CApplication.php(167): CWebApplication->onBeginRequest()
+#1 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/
+in /Applications/MAMP/htdocs/dcadmin/protected/components/RequireLogin.php (12)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
