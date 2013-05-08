@@ -1131,3 +1131,59 @@ Stack trace:
 REQUEST_URI=/dcadmin/index.php/playlistitem/update/7
 HTTP_REFERER=http://localhost:8888/dcadmin/index.php/playlistitem/update/7
 ---
+2013/05/08 16:45:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/Library/yii/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/Library/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('delete')
+#8 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('lesson/delete')
+#9 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/dcadmin/index.php/lesson/delete/149
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/update/149
+---
+2013/05/08 16:46:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/Library/yii/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/Library/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('lesson/admin')
+#9 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/dcadmin/index.php/lesson/admin
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/update/149
+---
+2013/05/08 16:47:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php:148
+Stack trace:
+#0 /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php(80): LessonController->loadModel('149')
+#1 [internal function]: LessonController->actionUpdate('149')
+#2 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#3 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(LessonController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('update')
+#13 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('lesson/update')
+#14 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/dcadmin/index.php/lesson/update/149
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/7
+---

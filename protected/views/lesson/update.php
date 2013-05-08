@@ -10,7 +10,14 @@ $this->breadcrumbs=array(
 	'Update',
 );
 
+$this->menu=array(
+
+	array('label'=>'Delete Lesson', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this lesson?')),
+
+);
 ?>
+
+
 
 <h1>Update Lesson - <?php echo $model->title; ?></h1>
 
