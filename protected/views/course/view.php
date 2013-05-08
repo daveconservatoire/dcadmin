@@ -12,6 +12,8 @@ $this->menu=array(
 	array('label'=>'Create Course', 'url'=>array('create')),
 
 );
+
+Yii::app()->clientScript->registerCoreScript('jquery');
 ?>
 
 <h1><?php echo $model->title; ?></h1>
