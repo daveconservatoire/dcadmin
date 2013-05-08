@@ -1,3 +1,10 @@
 sql.php
 twitter.secrets.php
+index.php
 
+
+
+
+protected/components/UserIdentity.php
+
+protected/config/main.php
