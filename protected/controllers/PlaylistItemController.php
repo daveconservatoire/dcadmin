@@ -95,7 +95,7 @@ class PlaylistItemController extends Controller
 		{
 			$model->attributes=$_POST['PlaylistItem'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('lesson/update','id'=>$model->relid));
 		}
 
 		$this->render('update',array(

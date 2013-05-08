@@ -90,6 +90,16 @@ class SiteController extends Controller
     endforeach;
     echo "List order updated";
 	}
+	
+			public function actionProcessplaylist()
+	{
+	$position=0;
+		foreach ($_GET['listItem'] as $position => $item) :
+    $position=$position+1;
+    PlaylistItem::model()->updateByPk($item, array('sort'=>$position));  
+    endforeach;
+    echo "Playlist order updated";
+	}
 	    public function actionPlaylistTest()
 	{
 		$this->render('playlisttest');

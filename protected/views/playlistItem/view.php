@@ -27,5 +27,6 @@ $this->menu=array(
 		'relid',
 		'youtubeid',
 		'credit',
+		'sort',
 	),
 )); ?>

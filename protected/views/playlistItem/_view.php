@@ -29,5 +29,9 @@
 	<?php echo CHtml::encode($data->credit); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('sort')); ?>:</b>
+	<?php echo CHtml::encode($data->sort); ?>
+	<br />
+
 
 </div>

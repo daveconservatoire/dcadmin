@@ -41,6 +41,11 @@
 		<?php echo $form->textField($model,'credit',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'sort'); ?>
+		<?php echo $form->textField($model,'sort'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

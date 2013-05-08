@@ -23,13 +23,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'text'); ?>
-		<?php echo $form->textField($model,'text',array('size'=>60,'maxlength'=>5000)); ?>
+		<?php echo $form->textArea($model,'text',array('style'=>'width:500px; height: 200px','maxlength'=>5000)); ?>
 		<?php echo $form->error($model,'text'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'relid'); ?>
-		<?php echo $form->textField($model,'relid'); ?>
+		
+		<?php echo $form->hiddenField($model,'relid'); ?>
 		<?php echo $form->error($model,'relid'); ?>
 	</div>
 
@@ -44,6 +44,7 @@
 		<?php echo $form->textField($model,'credit',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'credit'); ?>
 	</div>
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

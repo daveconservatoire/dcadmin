@@ -10,6 +10,7 @@
  * @property integer $relid
  * @property string $youtubeid
  * @property string $credit
+ * @property integer $sort
  */
 class PlaylistItem extends CActiveRecord
 {
@@ -40,14 +41,14 @@ class PlaylistItem extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, text, relid, youtubeid, credit', 'required'),
-			array('relid', 'numerical', 'integerOnly'=>true),
+			array('relid, sort', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>75),
 			array('text', 'length', 'max'=>5000),
 			array('youtubeid', 'length', 'max'=>20),
 			array('credit', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, text, relid, youtubeid, credit', 'safe', 'on'=>'search'),
+			array('id, title, text, relid, youtubeid, credit, sort', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,6 +75,7 @@ class PlaylistItem extends CActiveRecord
 			'relid' => 'Relid',
 			'youtubeid' => 'Youtubeid',
 			'credit' => 'Credit',
+			'sort' => 'Sort',
 		);
 	}
 
@@ -94,6 +96,7 @@ class PlaylistItem extends CActiveRecord
 		$criteria->compare('relid',$this->relid);
 		$criteria->compare('youtubeid',$this->youtubeid,true);
 		$criteria->compare('credit',$this->credit,true);
+		$criteria->compare('sort',$this->sort);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

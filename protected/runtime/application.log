@@ -866,3 +866,268 @@ REQUEST_URI=/dcadmin/index.php/site/playlisttest
 in /Applications/MAMP/htdocs/dcadmin/protected/views/site/playlisttest.php (7)
 in /Applications/MAMP/htdocs/dcadmin/protected/controllers/SiteController.php (95)
 in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 16:00:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lessonid' in 'where clause'. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE lessonid=41.
+in /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php (27)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php (103)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 16:00:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lessonid' in 'where clause'. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE lessonid=41' in /Applications/MAMP/Library/yii/db/CDbCommand.php:541
+Stack trace:
+#0 /Applications/MAMP/Library/yii/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php(27): CActiveRecord->findAll('lessonid=41')
+#4 /Applications/MAMP/Library/yii/web/CBaseController.php(126): require('/Applications/M...')
+#5 /Applications/MAMP/Library/yii/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/Library/yii/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/Library/yii/web/CController.php(782): CController->renderPartial('update', Array, true)
+#8 /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php(103): CController->render('update', Array)
+#9 [internal function]: LessonController->actionUpdate('41')
+#10 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#11 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(LessonController), Object(ReflectionMethod), Array)
+#12 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#19 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('update')
+#21 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('lesson/update')
+#22 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/dcadmin/index.php/lesson/update/41
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/41
+---
+2013/05/08 16:01:45 [error] [php] Undefined variable: playlistitem (/Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php:28)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(869): LessonController->renderFile()
+#1 /Applications/MAMP/Library/yii/web/CController.php(782): LessonController->renderPartial()
+#2 /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php(103): LessonController->render()
+#3 unknown(0): LessonController->actionUpdate()
+#4 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): LessonController->runAction()
+#8 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/MAMP/Library/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): LessonController->filterAccessControl()
+#11 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#13 /Applications/MAMP/Library/yii/web/CController.php(265): LessonController->runActionWithFilters()
+#14 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): LessonController->run()
+#15 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/lesson/update/41
+in /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php (28)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php (103)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 16:03:57 [error] [php] Undefined variable: lesson (/Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php:33)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(869): LessonController->renderFile()
+#1 /Applications/MAMP/Library/yii/web/CController.php(782): LessonController->renderPartial()
+#2 /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php(103): LessonController->render()
+#3 unknown(0): LessonController->actionUpdate()
+#4 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): LessonController->runAction()
+#8 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/MAMP/Library/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): LessonController->filterAccessControl()
+#11 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#13 /Applications/MAMP/Library/yii/web/CController.php(265): LessonController->runActionWithFilters()
+#14 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): LessonController->run()
+#15 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/lesson/update/41
+in /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php (33)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php (103)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 16:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "processplaylist".' in /Applications/MAMP/Library/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(270): CController->missingAction('processplaylist')
+#1 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('processplaylist')
+#2 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('site/processpla...')
+#3 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/dcadmin/index.php/site/processplaylist/?listItem[]=6&listItem[]=5&listItem[]=7&listItem[]=8&listItem[]=9
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/update/41
+---
+2013/05/08 16:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "processplaylist".' in /Applications/MAMP/Library/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(270): CController->missingAction('processplaylist')
+#1 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('processplaylist')
+#2 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('site/processpla...')
+#3 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/dcadmin/index.php/site/processplaylist/?listItem[]=6&listItem[]=5&listItem[]=7&listItem[]=8&listItem[]=9
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/update/41
+---
+2013/05/08 16:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "processplaylist".' in /Applications/MAMP/Library/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(270): CController->missingAction('processplaylist')
+#1 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('processplaylist')
+#2 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('site/processpla...')
+#3 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/dcadmin/index.php/site/processplaylist/?listItem[]=5&listItem[]=9&listItem[]=6&listItem[]=7&listItem[]=8
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/update/41
+---
+2013/05/08 16:10:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "processplaylist".' in /Applications/MAMP/Library/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(270): CController->missingAction('processplaylist')
+#1 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('processplaylist')
+#2 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('site/processpla...')
+#3 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/dcadmin/index.php/site/processplaylist/?listItem[]=6&listItem[]=5&listItem[]=7&listItem[]=8&listItem[]=9
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/update/41
+---
+2013/05/08 16:23:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order' at line 1. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE relid=41 ORDER BY order.
+in /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php (31)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php (103)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 16:23:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order' at line 1. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE relid=41 ORDER BY order' in /Applications/MAMP/Library/yii/db/CDbCommand.php:541
+Stack trace:
+#0 /Applications/MAMP/Library/yii/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php(31): CActiveRecord->findAll('relid=41 ORDER ...')
+#4 /Applications/MAMP/Library/yii/web/CBaseController.php(126): require('/Applications/M...')
+#5 /Applications/MAMP/Library/yii/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/Library/yii/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/Library/yii/web/CController.php(782): CController->renderPartial('update', Array, true)
+#8 /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php(103): CController->render('update', Array)
+#9 [internal function]: LessonController->actionUpdate('41')
+#10 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#11 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(LessonController), Object(ReflectionMethod), Array)
+#12 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#19 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('update')
+#21 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('lesson/update')
+#22 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/dcadmin/index.php/lesson/update/41
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/7
+---
+2013/05/08 16:24:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in /Applications/MAMP/Library/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(270): CController->missingAction('gii')
+#1 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('gii')
+#2 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/dcadmin/index.php/site/gii
+---
+2013/05/08 16:25:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order' at line 1. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE relid=41 ORDER BY order.
+in /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php (31)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php (103)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 16:25:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order' at line 1. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE relid=41 ORDER BY order' in /Applications/MAMP/Library/yii/db/CDbCommand.php:541
+Stack trace:
+#0 /Applications/MAMP/Library/yii/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php(31): CActiveRecord->findAll('relid=41 ORDER ...')
+#4 /Applications/MAMP/Library/yii/web/CBaseController.php(126): require('/Applications/M...')
+#5 /Applications/MAMP/Library/yii/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/Library/yii/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/Library/yii/web/CController.php(782): CController->renderPartial('update', Array, true)
+#8 /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php(103): CController->render('update', Array)
+#9 [internal function]: LessonController->actionUpdate('41')
+#10 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#11 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(LessonController), Object(ReflectionMethod), Array)
+#12 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#19 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('update')
+#21 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('lesson/update')
+#22 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/dcadmin/index.php/lesson/update/41
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/7
+---
+2013/05/08 16:26:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order' at line 1. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE relid=41 ORDER BY order.
+in /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php (31)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php (103)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 16:26:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order' at line 1. The SQL statement executed was: SELECT * FROM `PlaylistItem` `t` WHERE relid=41 ORDER BY order' in /Applications/MAMP/Library/yii/db/CDbCommand.php:541
+Stack trace:
+#0 /Applications/MAMP/Library/yii/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Applications/MAMP/htdocs/dcadmin/protected/views/lesson/update.php(31): CActiveRecord->findAll('relid=41 ORDER ...')
+#4 /Applications/MAMP/Library/yii/web/CBaseController.php(126): require('/Applications/M...')
+#5 /Applications/MAMP/Library/yii/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/Library/yii/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/Library/yii/web/CController.php(782): CController->renderPartial('update', Array, true)
+#8 /Applications/MAMP/htdocs/dcadmin/protected/controllers/LessonController.php(103): CController->render('update', Array)
+#9 [internal function]: LessonController->actionUpdate('41')
+#10 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#11 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(LessonController), Object(ReflectionMethod), Array)
+#12 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#19 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('update')
+#21 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('lesson/update')
+#22 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/dcadmin/index.php/lesson/update/41
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/7
+---
+2013/05/08 16:30:48 [error] [exception.CException] exception 'CException' with message 'Property "PlaylistItem.order" is not defined.' in /Applications/MAMP/Library/yii/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(143): CComponent->__get('order')
+#1 /Applications/MAMP/Library/yii/validators/CNumberValidator.php(78): CActiveRecord->__get('order')
+#2 /Applications/MAMP/Library/yii/validators/CValidator.php(213): CNumberValidator->validateAttribute(Object(PlaylistItem), 'order')
+#3 /Applications/MAMP/Library/yii/base/CModel.php(159): CValidator->validate(Object(PlaylistItem), NULL)
+#4 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(794): CModel->validate(NULL)
+#5 /Applications/MAMP/htdocs/dcadmin/protected/controllers/PlaylistitemController.php(97): CActiveRecord->save()
+#6 [internal function]: PlaylistItemController->actionUpdate('7')
+#7 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PlaylistItemController), Array)
+#8 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PlaylistItemController), Object(ReflectionMethod), Array)
+#9 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('update')
+#18 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('playlistitem/up...')
+#19 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#21 {main}
+REQUEST_URI=/dcadmin/index.php/playlistitem/update/7
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/playlistitem/update/7
+---
