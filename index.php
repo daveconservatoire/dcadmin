@@ -1,26 +1,13 @@
-<?
-$herotext="DCon Admin";
-$herosubtext="Add series and videos";
-include('header.php');
-include('sql.php');
+<?php
 
-$query="SELECT * FROM Course";
-$result = mysql_query($query) or die(mysql_error());  
-while($row = mysql_fetch_array( $result )) {
-?>
-<div class='row'>
-	<div id='listItem_<?=$row['id']?>'>
-		<a href='editseriesnew.php?seriesid=<?=$row['id']?>' class='btn' style='float: right; margin-top:5px'>Edit</a>
-		<h3><?=$row['title']?></h3>
-	</div>
-</div>
-<?
-}
-include('footer.php');
-?>
-      
-      
-      
+// change the following paths if necessary
+$yii=dirname(__FILE__).'/../../Library/yii/yii.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
 
-		 
+// remove the following lines when in production mode
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+// specify how many levels of call stack should be shown in each log message
+defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
+require_once($yii);
+Yii::createWebApplication($config)->run();
