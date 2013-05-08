@@ -90,4 +90,8 @@ class SiteController extends Controller
     endforeach;
     echo "List order updated";
 	}
+	    public function actionPlaylistTest()
+	{
+		$this->render('playlisttest');
+	}
 }
