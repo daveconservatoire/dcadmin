@@ -44,7 +44,7 @@ class Lesson extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('seriesno, lessonno, title, urltitle, youtubeid, timestamp', 'required'),
+			array('seriesno, title, urltitle, youtubeid' , 'required'),
 			array('seriesno, lessonno', 'numerical', 'integerOnly'=>true),
 			array('filetype', 'length', 'max'=>1),
 			array('title, urltitle', 'length', 'max'=>150),
@@ -73,13 +73,13 @@ class Lesson extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'filetype' => 'Filetype',
+			'filetype' => 'Lesson Type',
 			'id' => 'ID',
-			'seriesno' => 'Seriesno',
-			'lessonno' => 'Lessonno',
+			'seriesno' => 'Part of Course',
+			'lessonno' => 'Lesson Number',
 			'title' => 'Title',
-			'urltitle' => 'Urltitle',
-			'youtubeid' => 'Youtubeid',
+			'urltitle' => 'Url Title',
+			'youtubeid' => 'Youtube Id',
 			'timestamp' => 'Timestamp',
 		);
 	}

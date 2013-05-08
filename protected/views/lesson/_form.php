@@ -17,21 +17,17 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'filetype'); ?>
-		<?php echo $form->textField($model,'filetype',array('size'=>1,'maxlength'=>1)); ?>
+	    <?php echo $form->dropDownList($model, 'filetype', array('l'=>'Lesson', 'e'=>'Exercise', 'p'=>'Playlist'));?>
 		<?php echo $form->error($model,'filetype'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'seriesno'); ?>
-		<?php echo $form->textField($model,'seriesno'); ?>
+		<?php echo $form->dropDownList($model,'seriesno', CHtml::listData(Course::model()->findAll(array('order' => 'id DESC')),'id','title'));?>
 		<?php echo $form->error($model,'seriesno'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'lessonno'); ?>
-		<?php echo $form->textField($model,'lessonno'); ?>
-		<?php echo $form->error($model,'lessonno'); ?>
-	</div>
+
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
@@ -51,11 +47,7 @@
 		<?php echo $form->error($model,'youtubeid'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'timestamp'); ?>
-		<?php echo $form->textField($model,'timestamp'); ?>
-		<?php echo $form->error($model,'timestamp'); ?>
-	</div>
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

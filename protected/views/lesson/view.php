@@ -18,6 +18,10 @@ $this->menu=array(
 
 <h1>View Lesson #<?php echo $model->id; ?></h1>
 
+<iframe width="560" height="315" src="http://www.youtube.com/embed/<?=$model->youtubeid;?>" frameborder="0" allowfullscreen></iframe>
+ 
+ <br /><br />
+
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
