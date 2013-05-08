@@ -446,3 +446,254 @@ Stack trace:
 REQUEST_URI=/dcadmin/index.php/lesson/admin
 HTTP_REFERER=http://localhost:8888/dcadmin/index.php/lesson/create
 ---
+2013/05/08 14:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/admin".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('create/admin')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/index.php/create/admin
+HTTP_REFERER=http://localhost:8888/dcadmin/
+---
+2013/05/08 14:15:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/admin".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('create/admin')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/index.php/create/admin
+HTTP_REFERER=http://localhost:8888/dcadmin/
+---
+2013/05/08 14:15:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/admin".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('create/admin')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/index.php/create/admin
+HTTP_REFERER=http://localhost:8888/dcadmin/
+---
+2013/05/08 14:15:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/admin".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('create/admin')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/index.php/create/admin
+---
+2013/05/08 14:15:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/admin".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('create/admin')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/index.php/create/admin
+---
+2013/05/08 14:18:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/Library/yii/web/CController.php:336
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#7 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('view')
+#9 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('course/view')
+#10 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/dcadmin/index.php/course/view?title=Reading+Music
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/index
+---
+2013/05/08 14:19:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/Library/yii/web/CController.php:336
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#7 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('view')
+#9 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('course/view')
+#10 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/dcadmin/index.php/course/view?title=Reading+Music
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/index
+---
+2013/05/08 14:23:53 [error] [exception.CException] exception 'CException' with message 'Property "Course.tite" is not defined.' in /Applications/MAMP/Library/yii/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/Library/yii/db/ar/CActiveRecord.php(143): CComponent->__get('tite')
+#1 /Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php(19): CActiveRecord->__get('tite')
+#2 /Applications/MAMP/Library/yii/web/CBaseController.php(126): require('/Applications/M...')
+#3 /Applications/MAMP/Library/yii/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/Library/yii/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/Library/yii/web/CController.php(782): CController->renderPartial('view', Array, true)
+#6 /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php(47): CController->render('view', Array)
+#7 [internal function]: CourseController->actionView('4')
+#8 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#9 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#10 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Applications/MAMP/Library/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#17 /Applications/MAMP/Library/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('view')
+#19 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('course/view')
+#20 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#22 {main}
+REQUEST_URI=/dcadmin/index.php/course/4
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/index
+---
+2013/05/08 14:29:50 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php:25)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(869): CourseController->renderFile()
+#1 /Applications/MAMP/Library/yii/web/CController.php(782): CourseController->renderPartial()
+#2 /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php(47): CourseController->render()
+#3 unknown(0): CourseController->actionView()
+#4 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CourseController->runAction()
+#8 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/MAMP/Library/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#11 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#13 /Applications/MAMP/Library/yii/web/CController.php(265): CourseController->runActionWithFilters()
+#14 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CourseController->run()
+#15 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/course/4
+in /Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php (25)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php (47)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 14:30:19 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php:25)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(869): CourseController->renderFile()
+#1 /Applications/MAMP/Library/yii/web/CController.php(782): CourseController->renderPartial()
+#2 /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php(47): CourseController->render()
+#3 unknown(0): CourseController->actionView()
+#4 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CourseController->runAction()
+#8 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/MAMP/Library/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#11 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#13 /Applications/MAMP/Library/yii/web/CController.php(265): CourseController->runActionWithFilters()
+#14 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CourseController->run()
+#15 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/course/4
+in /Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php (25)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php (47)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 14:30:48 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php:27)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(869): CourseController->renderFile()
+#1 /Applications/MAMP/Library/yii/web/CController.php(782): CourseController->renderPartial()
+#2 /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php(47): CourseController->render()
+#3 unknown(0): CourseController->actionView()
+#4 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CourseController->runAction()
+#8 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/MAMP/Library/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#11 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#13 /Applications/MAMP/Library/yii/web/CController.php(265): CourseController->runActionWithFilters()
+#14 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CourseController->run()
+#15 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/course/4
+in /Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php (27)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php (47)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 14:32:02 [error] [php] Undefined variable: course (/Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php:21)
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(869): CourseController->renderFile()
+#1 /Applications/MAMP/Library/yii/web/CController.php(782): CourseController->renderPartial()
+#2 /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php(47): CourseController->render()
+#3 unknown(0): CourseController->actionView()
+#4 /Applications/MAMP/Library/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/Library/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/Library/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(133): CourseController->runAction()
+#8 /Applications/MAMP/Library/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/MAMP/Library/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /Applications/MAMP/Library/yii/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#11 /Applications/MAMP/Library/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/MAMP/Library/yii/web/CController.php(291): CFilterChain->run()
+#13 /Applications/MAMP/Library/yii/web/CController.php(265): CourseController->runActionWithFilters()
+#14 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CourseController->run()
+#15 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/dcadmin/index.php(15): CWebApplication->run()
+REQUEST_URI=/dcadmin/index.php/course/4
+in /Applications/MAMP/htdocs/dcadmin/protected/views/course/view.php (21)
+in /Applications/MAMP/htdocs/dcadmin/protected/controllers/CourseController.php (47)
+in /Applications/MAMP/htdocs/dcadmin/index.php (15)
+2013/05/08 14:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jqueryui.js".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('js/jqueryui.js')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/js/jqueryui.js
+HTTP_REFERER=http://localhost:8888/dcadminold/
+---
+2013/05/08 14:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jqueryui.js".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('js/jqueryui.js')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/js/jqueryui.js
+HTTP_REFERER=http://localhost:8888/dcadmin/
+---
+2013/05/08 15:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "process-sortable.php".' in /Applications/MAMP/Library/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(270): CController->missingAction('process-sortabl...')
+#1 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('process-sortabl...')
+#2 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('course/process-...')
+#3 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/dcadmin/index.php/course/process-sortable.php?listItem[]=59&listItem[]=10&listItem[]=48&listItem[]=49&listItem[]=53&listItem[]=50&listItem[]=56&listItem[]=54&listItem[]=57&listItem[]=51&listItem[]=63&listItem[]=62&listItem[]=70&listItem[]=71&listItem[]=60&listItem[]=66&listItem[]=72&listItem[]=79&listItem[]=81&listItem[]=82&listItem[]=52&listItem[]=65&listItem[]=55&listItem[]=67&listItem[]=58&listItem[]=68&listItem[]=69&listItem[]=73&listItem[]=74&listItem[]=83&listItem[]=84&listItem[]=85&listItem[]=87&listItem[]=80
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/4
+---
+2013/05/08 15:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "process-sortable.php".' in /Applications/MAMP/Library/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CController.php(270): CController->missingAction('process-sortabl...')
+#1 /Applications/MAMP/Library/yii/web/CWebApplication.php(282): CController->run('process-sortabl...')
+#2 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('course/process-...')
+#3 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/dcadmin/index.php/course/process-sortable.php?listItem[]=59&listItem[]=10&listItem[]=48&listItem[]=49&listItem[]=53&listItem[]=50&listItem[]=56&listItem[]=54&listItem[]=57&listItem[]=51&listItem[]=63&listItem[]=62&listItem[]=70&listItem[]=71&listItem[]=60&listItem[]=66&listItem[]=72&listItem[]=79&listItem[]=81&listItem[]=82&listItem[]=52&listItem[]=65&listItem[]=55&listItem[]=67&listItem[]=58&listItem[]=68&listItem[]=69&listItem[]=73&listItem[]=74&listItem[]=83&listItem[]=84&listItem[]=85&listItem[]=87&listItem[]=80
+HTTP_REFERER=http://localhost:8888/dcadmin/index.php/course/4
+---
+2013/05/08 15:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "process".' in /Applications/MAMP/Library/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/Library/yii/web/CWebApplication.php(141): CWebApplication->runController('process')
+#1 /Applications/MAMP/Library/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dcadmin/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/dcadmin/process
+---

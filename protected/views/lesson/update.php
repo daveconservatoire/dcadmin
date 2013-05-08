@@ -8,14 +8,10 @@ $this->breadcrumbs=array(
 	'Update',
 );
 
-$this->menu=array(
-	array('label'=>'List Lesson', 'url'=>array('index')),
-	array('label'=>'Create Lesson', 'url'=>array('create')),
-	array('label'=>'View Lesson', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Lesson', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Update Lesson <?php echo $model->id; ?></h1>
+<h1>Update Lesson - <?php echo $model->title; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/<?=$model->youtubeid;?>" frameborder="0" allowfullscreen></iframe>
