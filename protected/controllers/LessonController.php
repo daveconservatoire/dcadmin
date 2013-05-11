@@ -57,12 +57,19 @@ class LessonController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+		
+
 
 		if(isset($_POST['Lesson']))
 		{
 			$model->attributes=$_POST['Lesson'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if($model->save()) {
+				include('twitter.class.php');
+                include('twitter.secrets.php');
+                $twitter = new Twitter($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
+                $twitter->send('New Lesson: '.$model->title.' (daveconservatoire.org/lesson/'.$model->urltitle.')');
+                $this->redirect(array('view','id'=>$model->id));
+				}
 		}
 
 		$this->render('create',array(
