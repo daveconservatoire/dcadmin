@@ -10,3 +10,7 @@ protected/data/*.db
 protected/controllers/twitter.secrets.php
 
 protected/runtime/application.log
+
+
+
+.htaccess

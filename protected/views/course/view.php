@@ -17,6 +17,11 @@ Yii::app()->clientScript->registerCoreScript('jquery');
 ?>
 
 <h1><?php echo $model->title; ?></h1>
+<? if(Yii::app()->user->hasFlash('ytupdate')){
+	
+	echo "<h3>".Yii::app()->user->getFlash('ytupdate')."</h3>";
+}
+?>
 <div id="info"></div>
 <ul id="sort-list">  
 <? $lessons=Lesson::model()->findAll("seriesno=".$model->id ." ORDER BY lessonno");
