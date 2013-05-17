@@ -116,7 +116,7 @@ class SiteController extends Controller
     "code" => $code,
     "client_id" => Yii::app()->params->yt_client_id,
     "client_secret" => Yii::app()->params->yt_client_secret,
-    "redirect_uri" => Yii::app()->params->redirecturi,
+    "redirect_uri" => Yii::app()->params->yt_redirecturi,
     "grant_type" => "authorization_code"
     );
      
