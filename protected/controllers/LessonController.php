@@ -68,8 +68,59 @@ class LessonController extends Controller
                 include('twitter.secrets.php');
                 $twitter = new Twitter($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
                 $twitter->send('New Lesson: '.$model->title.' (daveconservatoire.org/lesson/'.$model->urltitle.')');
-                $this->redirect(array('course/view','id'=>$model->seriesno));
+                
+                
+                
+                			    if(isset($_SESSION['accessToken'])){
+
+
+$data='<?xml version="1.0"?>
+<entry xmlns="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:yt="http://gdata.youtube.com/schemas/2007">
+  <media:group>
+    <media:title type="plain">'.$model->title.'</media:title>
+    <media:description type="plain">'.$model->description."\n\n".' Visit http://www.daveconservatoire.org to watch hundreds of free video music lessons just like this one and complete interactive exercises to practice your skills!</media:description>
+    <media:category scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Education</media:category>
+    <media:keywords>'.$model->keywords.', music theory, music, online music lessons</media:keywords>
+  </media:group>
+  <yt:accessControl action="comment" permission="allowed"/>
+  <yt:accessControl action="commentVote" permission="allowed"/>
+  <yt:accessControl action="videoRespond" permission="allowed"/>
+  <yt:accessControl action="rate" permission="allowed"/>
+  <yt:accessControl action="list" permission="allowed"/>
+  <yt:accessControl action="embed" permission="allowed"/>
+  <yt:accessControl action="syndicate" permission="allowed"/>
+</entry>';
+
+$headers = array("PUT /feeds/api/users/default/uploads/".$model->youtubeid." HTTP/1.1",
+"Host: gdata.youtube.com",
+"Authorization: Bearer ".$_SESSION['accessToken'],
+"GData-Version: 2",
+"X-GData-Key: key=AI39si7NZmFxFOE7WyNLM6Y3HYQZ4fNWG7oPN34vfHePKMhzTXiD8WTPuW73eyjtTjUOHKH6wfQZt4xrQ6k3iydXcZv6MiqdaA",
+"Content-length: ".strlen($data),
+"Content-Type: application/atom+xml; charset=UTF-8");
+$curl = curl_init("https://gdata.youtube.com/feeds/api/users/default/uploads/".$model->youtubeid);
+curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl, CURLOPT_TIMEOUT, 10);
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'PUT');
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+curl_setopt($curl, CURLOPT_REFERER, true);
+curl_setopt($curl, CURLOPT_HEADER, 0);
+$returnxxx = curl_exec($curl);
+curl_close($curl);
+Yii::app()->user->setFlash('ytupdate','The youtube information for this video was successfully updated.');
+
+} else {
+	Yii::app()->user->setFlash('ytupdate', 'There was a problem updating this video on Youtube');
+}
+
+				$this->redirect(array('course/view','id'=>$model->seriesno));
 				}
+           
 		}
 
 		$this->render('create',array(
@@ -134,7 +185,7 @@ curl_setopt($curl, CURLOPT_REFERER, true);
 curl_setopt($curl, CURLOPT_HEADER, 0);
 $returnxxx = curl_exec($curl);
 curl_close($curl);
-Yii::app()->user->setFlash('ytupdate', $data);
+Yii::app()->user->setFlash('ytupdate','The youtube information for this video was successfully updated.');
 
 } else {
 	Yii::app()->user->setFlash('ytupdate', 'There was a problem updating this video on Youtube');
