@@ -102,9 +102,9 @@ $data='<?xml version="1.0"?>
   xmlns:yt="http://gdata.youtube.com/schemas/2007">
   <media:group>
     <media:title type="plain">'.$model->title.'</media:title>
-    <media:description type="plain">A lesson from Dave Conservatoire called: '.$model->title.'</media:description>
+    <media:description type="plain">'.$model->description."\n\n".' Visit http://www.daveconservatoire.org to watch hundreds of free video music lessons just like this one and complete interactive exercises to practice your skills!</media:description>
     <media:category scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Education</media:category>
-    <media:keywords>music theory, music, online music lessons</media:keywords>
+    <media:keywords>'.$model->keywords.', music theory, music, online music lessons</media:keywords>
   </media:group>
   <yt:accessControl action="comment" permission="allowed"/>
   <yt:accessControl action="commentVote" permission="allowed"/>
@@ -134,7 +134,7 @@ curl_setopt($curl, CURLOPT_REFERER, true);
 curl_setopt($curl, CURLOPT_HEADER, 0);
 $returnxxx = curl_exec($curl);
 curl_close($curl);
-Yii::app()->user->setFlash('ytupdate', 'Youtube information successfully updated');
+Yii::app()->user->setFlash('ytupdate', $data);
 
 } else {
 	Yii::app()->user->setFlash('ytupdate', 'There was a problem updating this video on Youtube');

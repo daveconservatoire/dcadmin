@@ -34,6 +34,18 @@
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>150)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'description'); ?>
+		<?php echo $form->textArea($model,'description',array('style'=>'width: 400px; height: 150px')); ?>
+		<?php echo $form->error($model,'description'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'keywords'); ?>
+		<?php echo $form->textField($model,'keywords',array('size'=>60,'maxlength'=>150)); ?>
+		<?php echo $form->error($model,'keywords'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'urltitle'); ?>

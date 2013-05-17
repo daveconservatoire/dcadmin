@@ -44,7 +44,7 @@ class Lesson extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('seriesno, title, urltitle' , 'required'),
+			array('seriesno, title, urltitle,description, keywords' , 'required'),
 			array('seriesno, lessonno', 'numerical', 'integerOnly'=>true),
 			array('filetype', 'length', 'max'=>1),
 			array('title, urltitle', 'length', 'max'=>150),
