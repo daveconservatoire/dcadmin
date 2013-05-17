@@ -66,7 +66,7 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()) 
-				$this->redirect('https://accounts.google.com/o/oauth2/auth?scope=https://gdata.youtube.com&state=profile&redirect_uri=http://localhost:8888/dcadmin/site/oauthcallback&response_type=code&client_id=368669799271.apps.googleusercontent.com&access_type=');
+	$this->redirect('https://accounts.google.com/o/oauth2/auth?scope=https://gdata.youtube.com&state=profile&redirect_uri='.Yii::app()->params->yt_redirecturi.'&response_type=code&client_id=368669799271.apps.googleusercontent.com&access_type=');
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
