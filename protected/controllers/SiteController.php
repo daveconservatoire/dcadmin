@@ -116,7 +116,7 @@ class SiteController extends Controller
     "code" => $code,
     "client_id" => Yii::app()->params->yt_client_id,
     "client_secret" => Yii::app()->params->yt_client_secret,
-    "redirect_uri" => "http://localhost:8888/dcadmin/site/oauthcallback",
+    "redirect_uri" => Yii::app()->params->redirecturi,
     "grant_type" => "authorization_code"
     );
      

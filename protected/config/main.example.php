@@ -100,5 +100,6 @@ return array(
 		// Youtube Updater app details
 		'yt_client_id'=>'YTCLIENTID',
 		'yt_client_secret'=>'YTCLIENTSECRET',
+		'yt_client_secret'=>'YTREDIRECTURI',
 	),
 );
