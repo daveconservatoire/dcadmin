@@ -80,7 +80,7 @@ $data='<?xml version="1.0"?>
   xmlns:yt="http://gdata.youtube.com/schemas/2007">
   <media:group>
     <media:title type="plain">'.$model->title.'</media:title>
-    <media:description type="plain">'.$model->description." \n\n ".' Visit http://www.daveconservatoire.org to watch hundreds of free video music lessons just like this one and complete interactive exercises to practice your skills!</media:description>
+    <media:description type="plain">'.$model->description." \r\n ".'Visit http://www.daveconservatoire.org to watch hundreds of free video music lessons just like this one and complete interactive exercises to practice your skills!</media:description>
     <media:category scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Education</media:category>
     <media:keywords>'.$model->keywords.', music theory, music, online music lessons</media:keywords>
   </media:group>

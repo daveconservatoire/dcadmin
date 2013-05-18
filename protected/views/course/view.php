@@ -34,6 +34,7 @@ foreach ($lessons as $lesson) {
 	<? if ($lesson->description==""){ echo "; color: red;";}?>">
 		<?php echo CHtml::link('Edit', array('lesson/update', 'id'=>$lesson->id) , array('style'=>'float: right; margin-top:5px')); ?>
 		<h4><?=$lesson->title;?></h4>
+		<p><? echo $lesson->description;?></p>
 		<div style="clear:both"></div>
 	</li>
 	<?
