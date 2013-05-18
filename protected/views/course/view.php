@@ -30,7 +30,8 @@ Yii::app()->clientScript->registerCoreScript('jquery');
 
 foreach ($lessons as $lesson) {
 ?>
-	<li id='listItem_<? echo $lesson->id; ?>' style="border: 1px solid; padding: 5px; margin: 5px">
+	<li id='listItem_<? echo $lesson->id; ?>' style="border: 1px solid; padding: 5px; margin: 5px
+	<? if ($lesson->description==""){ echo "; color: red;";}?>">
 		<?php echo CHtml::link('Edit', array('lesson/update', 'id'=>$lesson->id) , array('style'=>'float: right; margin-top:5px')); ?>
 		<h4><?=$lesson->title;?></h4>
 		<div style="clear:both"></div>
