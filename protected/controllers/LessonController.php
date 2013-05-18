@@ -73,7 +73,7 @@ class LessonController extends Controller
                 
                 			    if(isset($_SESSION['accessToken'])){
                 			    
-                			    $model->description.="\r\nVisit http://www.daveconservatoire.org to watch hundreds of free video music lessons just like this one and complete interactive exercises to practice your skills!";
+                			    $model->description.="\n\n"."Visit http://www.daveconservatoire.org to watch hundreds of free video music lessons just like this one and complete interactive exercises to practice your skills!";
 
 
 $data='<?xml version="1.0"?>
