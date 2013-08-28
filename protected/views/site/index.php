@@ -10,5 +10,6 @@ $this->pageTitle=Yii::app()->name;
 
 <p><?php echo CHtml::link('Create a New Lesson',array('lesson/create')); ?></p>
 <p><?php echo CHtml::link('Create a New Course',array('course/create')); ?></p>
+<p><?php echo CHtml::link('Create a Topic',array('topic/create')); ?></p>
 <p><?php echo CHtml::link('Edit an Existing Course',array('course/index')); ?></p>
 <p><?php echo CHtml::link('Test that Playlist Videos are still on YouTube',array('site/playlisttest')); ?></p>

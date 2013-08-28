@@ -193,7 +193,7 @@ Yii::app()->user->setFlash('ytupdate','The youtube information for this video wa
 	Yii::app()->user->setFlash('ytupdate', 'There was a problem updating this video on Youtube');
 }
 
-				$this->redirect(array('lesson/update','id'=>$model->id));
+				$this->redirect(array('topic/view','id'=>$model->topicno));
 				}
 		}
 

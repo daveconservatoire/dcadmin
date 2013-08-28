@@ -1,27 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "Lesson".
+ * This is the model class for table "Topic".
  *
- * The followings are the available columns in table 'Lesson':
- * @property string $filetype
+ * The followings are the available columns in table 'Topic':
  * @property integer $id
- * @property integer $seriesno
- * @property integer $lessonno
  * @property string $title
- * @property string $urltitle
- * @property string $youtubeid
- * @property string $timestamp
- *
- * The followings are the available model relations:
- * @property UserVideoView[] $userVideoViews
+ * @property string $colour
+ * @property integer $courseId
+ * @property integer $sortorder
  */
-class Lesson extends CActiveRecord
+class Topic extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Lesson the static model class
+	 * @return Topic the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -33,7 +27,7 @@ class Lesson extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'Lesson';
+		return 'Topic';
 	}
 
 	/**
@@ -44,14 +38,13 @@ class Lesson extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('seriesno, topicno, title, urltitle' , 'required'),
-			array('seriesno, lessonno', 'numerical', 'integerOnly'=>true),
-			array('filetype', 'length', 'max'=>1),
-			array('title, urltitle', 'length', 'max'=>150),
-			array('youtubeid', 'length', 'max'=>70),
+			array('title, courseId', 'required'),
+			array('courseId, sortorder', 'numerical', 'integerOnly'=>true),
+			array('title', 'length', 'max'=>300),
+			array('colour', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('filetype, id, seriesno, lessonno, title, urltitle, youtubeid, timestamp', 'safe', 'on'=>'search'),
+			array('id, title, colour, courseId, sortorder', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,7 +56,6 @@ class Lesson extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'userVideoViews' => array(self::HAS_MANY, 'UserVideoView', 'lessonId'),
 		);
 	}
 
@@ -73,14 +65,11 @@ class Lesson extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'filetype' => 'Lesson Type',
 			'id' => 'ID',
-			'seriesno' => 'Part of Course',
-			'lessonno' => 'Lesson Number',
 			'title' => 'Title',
-			'urltitle' => 'Url Title',
-			'youtubeid' => 'Youtube Id',
-			'timestamp' => 'Timestamp',
+			'colour' => 'Colour',
+			'courseId' => 'Course',
+			'sortorder' => 'Sortorder',
 		);
 	}
 
@@ -95,14 +84,11 @@ class Lesson extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('filetype',$this->filetype,true);
 		$criteria->compare('id',$this->id);
-		$criteria->compare('seriesno',$this->seriesno);
-		$criteria->compare('lessonno',$this->lessonno);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('urltitle',$this->urltitle,true);
-		$criteria->compare('youtubeid',$this->youtubeid,true);
-		$criteria->compare('timestamp',$this->timestamp,true);
+		$criteria->compare('colour',$this->colour,true);
+		$criteria->compare('courseId',$this->courseId);
+		$criteria->compare('sortorder',$this->sortorder);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

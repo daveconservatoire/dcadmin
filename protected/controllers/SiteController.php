@@ -91,6 +91,17 @@ class SiteController extends Controller
     echo "List order updated";
 	}
 	
+    public function actionProcessTopics()
+	{
+	$position=0;
+		foreach ($_GET['listItem'] as $position => $item) :
+    $position=$position+1;
+    Topic::model()->updateByPk($item, array('sortorder'=>$position));  
+    endforeach;
+    echo "List order updated";
+	}
+	
+	
 	public function actionProcessplaylist()
 	{
 	$position=0;

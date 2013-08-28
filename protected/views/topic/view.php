@@ -16,7 +16,7 @@ $this->menu=array(
 Yii::app()->clientScript->registerCoreScript('jquery');
 ?>
 
-<h1><?php echo $model->title; ?> - Topics</h1>
+<h1><?php echo $model->title; ?></h1>
 <? if(Yii::app()->user->hasFlash('ytupdate')){
 	
 	echo "<h3>".Yii::app()->user->getFlash('ytupdate')."</h3>";
@@ -24,17 +24,17 @@ Yii::app()->clientScript->registerCoreScript('jquery');
 ?>
 <div id="info"></div>
 <ul id="sort-list">  
-<? $topics=Topic::model()->findAll("courseId=".$model->id ." ORDER BY sortorder");
+<? $lessons=Lesson::model()->findAll("topicno=0 AND seriesno =7 ORDER BY lessonno");
 
 
 
-foreach ($topics as $topic) {
+foreach ($lessons as $lesson) {
 ?>
-	<li id='listItem_<? echo $topic->id; ?>' style="border: 1px solid; padding: 5px; margin: 5px">
-	
-		<?php echo CHtml::link('View Topic', array('topic/view', 'id'=>$topic->id) , array('style'=>'float: right; margin-top:5px')); ?>
-		<h4><?=$topic->title;?></h4>
-
+	<li id='listItem_<? echo $lesson->id; ?>' style="border: 1px solid; padding: 5px; margin: 5px
+	<? if ($lesson->description==""){ echo "; color: red;";}?>">
+		<?php echo CHtml::link('Edit', array('lesson/update', 'id'=>$lesson->id) , array('style'=>'float: right; margin-top:5px')); ?>
+		<h4><?=$lesson->title;?></h4>
+		<p><? echo $lesson->description;?></p>
 		<div style="clear:both"></div>
 	</li>
 	<?
@@ -50,7 +50,7 @@ foreach ($topics as $topic) {
       
       update : function () {
 		  var order = $('#sort-list').sortable('serialize');
-		  $("#info").load("<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/processtopics/?"+order);
+		  $("#info").load("<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/process/?"+order);
       }
     });
 });
