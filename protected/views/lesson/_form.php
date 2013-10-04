@@ -29,7 +29,7 @@
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'topicno'); ?>
-	    <?php echo $form->dropDownList($model,'topicno', CHtml::listData(Topic::model()->findAll(array('order' => 'title DESC')),'id','title'));?>
+	    <?php echo $form->dropDownList($model,'topicno', CHtml::listData(Topic::model()->findAll(array('order' => 'title DESC', 'condition'=>'courseId=4')),'id','title'));?>
 		<?php echo $form->error($model,'topicno'); ?>
 	</div>
 
