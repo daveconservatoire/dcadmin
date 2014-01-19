@@ -64,10 +64,12 @@ class LessonController extends Controller
 		{
 			$model->attributes=$_POST['Lesson'];
 			if($model->save()) {
+			/*
 				include('twitter.class.php');
                 include('twitter.secrets.php');
                 $twitter = new Twitter($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
                 $twitter->send('New Lesson: '.$model->title.' (daveconservatoire.org/lesson/'.$model->urltitle.')');
+                */
                 
                 
                 
