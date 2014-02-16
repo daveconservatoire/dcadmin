@@ -24,7 +24,7 @@ Yii::app()->clientScript->registerCoreScript('jquery');
 ?>
 <div id="info"></div>
 <ul id="sort-list">  
-<? $lessons=Lesson::model()->findAll("topicno=".$model->id." AND seriesno =4 ORDER BY lessonno");
+<? $lessons=Lesson::model()->findAll("topicno=".$model->id."  ORDER BY lessonno");
 
 
 
